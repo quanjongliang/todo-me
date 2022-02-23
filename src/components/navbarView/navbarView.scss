@@ -1,0 +1,11 @@
+.navbar-view {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  height: 100px;
+  background: gray;
+  width: 100vw;
+  &-container {
+  }
+}

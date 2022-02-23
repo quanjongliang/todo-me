@@ -1,0 +1,50 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  &-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &-skip {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: white;
+      display: flex;
+      cursor: pointer;
+      .skip-text {
+        z-index: 2;
+      }
+      .next-icon {
+        opacity: 0;
+        position: absolute;
+        margin-right: -10px;
+        &.active {
+          transition: 0.3s all linear;
+          opacity: 1;
+          position: relative;
+        }
+      }
+    }
+    &-title {
+      color: rgb(255, 255, 255);
+      p {
+        font-size: 30px;
+        margin: 0;
+      }
+      h1 {
+        font-size: 50px;
+      }
+    }
+    &-button {
+      display: flex;
+      justify-content: center;
+      &-wrapper {
+        width: 80%;
+      }
+    }
+  }
+}

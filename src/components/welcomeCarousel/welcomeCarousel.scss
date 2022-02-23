@@ -1,0 +1,39 @@
+.welcome-carousel {
+  &-container {
+    position: relative;
+    &-dot {
+      display: flex;
+      justify-content: center;
+      .help-dot {
+        cursor: pointer;
+        color: rgb(218, 218, 218);
+        font-size: 30px;
+        transition: 0.3s all linear;
+        &.active {
+          transition: 0.3s all linear;
+          color: rgb(0, 102, 255);
+        }
+      }
+    }
+    &-help {
+      display: flex;
+      overflow-x: hidden;
+      position: relative;
+      margin-bottom: 40px;
+      .help-item {
+        position: absolute;
+        transition: 0.3s all linear;
+        left: 100vw;
+        width: 100%;
+        top: 0;
+        opacity: 0;
+        &.active {
+          transition: 0.3s all linear;
+          position: relative;
+          left: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+$border-button: 5px;
+
+.button-login {
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &-container {
+    display: flex;
+    border-radius: $border-button;
+    align-items: center;
+    &:hover {
+      box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.42);
+    }
+    &-icon {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      padding: 10px;
+      border-top-left-radius: $border-button;
+      border-bottom-left-radius: $border-button;
+      svg {
+        color: white;
+      }
+    }
+    &-name {
+      margin-left: 10px;
+      font-weight: 600;
+    }
+  }
+}
